@@ -29,6 +29,7 @@
         export default About
     Observe que esta página não precisa buscar nenhum dado externo para ser pré-renderizado. Em casos como esse, o Next.js gera um único arquivo HTML por página durante o tempo de compilação.
         Geração estática com dados: Algumas páginas precisam de dados externos para formar a página html por completo. Existem dois caminhos, o conteúdo da sua página depende de dados externos: Use getStaticProps. ou se seus caminhos de PÁGINA dependem de dados externos: Use getStaticPaths.
+        Testei os metodos acima na pasta /pages/getStaticProps
     
     Renderização ao lado do servidor: Sua página precisa ser renderizada a cada nova solicitação, pois os dados estão mudando constantimente.
     Exemplos:
@@ -45,3 +46,11 @@
                 Aqui a page ira receber os dados passados pela funcao getsServerSideProps.
             }
 
+            Testei os metodos acima na pasta /pages/Render.
+    --------------------------------------Busca de Dados----------------------------------------------------------------------------------------------
+    getServerSidePropssó roda no lado do servidor e nunca roda no navegador.
+        export async function getServerSideProps(context) {
+        return {
+            props: {}, // will be passed to the page component as props
+        }
+        }
