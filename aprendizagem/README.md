@@ -12,6 +12,6 @@
     ./pages/home/index.js = localhost:3000/home
     ./pages/home/about.js = localhost:3000/home/about
 
-    Páginas | Rotas dinamicas
+    Páginas | Rotas dinamicas:
 
 
