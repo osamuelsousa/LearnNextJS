@@ -11,6 +11,26 @@
     gap: 20px;
 }
 
+.indexCorreto{
+    padding: 100px;
+}
+
+.indexMargin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexUl{
+    padding: 20px;
+}
+
+.indexLi{
+    padding: 20px;
+    width: 222px;
+    border-bottom: 1px solid black;
+}
+
 .indexBotao {
     padding: 10px 20px;
     background-color: #0070f3;
